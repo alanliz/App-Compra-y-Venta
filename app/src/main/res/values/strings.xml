@@ -60,4 +60,14 @@
     <string name="Btn_actualizar">Actualizar</string>
 
 
+    <!-- Crear anuncio -->
+    <string name="Et_marca">Marca</string>
+    <string name="Categoria">Categoría</string>
+    <string name="Condicion">Condición</string>
+    <string name="Locacion">Locación</string>
+    <string name="Et_precio">Precio</string>
+    <string name="Et_titulo">Título</string>
+    <string name="Et_descripcion">Descripción</string>
+    <string name="Btn_crear_anuncio">Crear anuncio</string>
+
 </resources>
