@@ -15,4 +15,25 @@ object Constantes {
 
         return DateFormat.format("dd/MM/yyyy", calendario).toString()
     }
+
+    const val anuncio_disponible = "Disponible"
+    const val anuncio_vendido = "Vendido"
+
+    val categorias = arrayOf(
+        "Celulares",
+        "Computadoras",
+        "Electronica y Electrodomesticos",
+        "Automoviles",
+        "Consolas y videojuegos",
+        "Hogar y muebles",
+        "Belleza y cuidado personal",
+        "Libros",
+        "Deportes"
+    )
+
+    val condiciones = arrayOf(
+        "Nuevo",
+        "Usado",
+        "Reacondicionado"
+    )
 }
