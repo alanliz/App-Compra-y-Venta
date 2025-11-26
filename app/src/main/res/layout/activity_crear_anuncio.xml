@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Anuncios.CrearAnuncio">
+
     <RelativeLayout
         android:id="@+id/RL_Imagen"
         android:layout_width="match_parent"
@@ -24,9 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/RV_Imagenes"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -34,7 +37,7 @@
                 app:spanCount="4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <!--Marca del artículo-->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Marca"
                 android:layout_below="@+id/RV_Imagenes"
@@ -53,7 +56,6 @@
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!--Categoria del artículo-->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Categoria"
                 android:layout_below="@+id/TIL_Marca"
@@ -72,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <!--Condición del artículo-->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Condicion"
                 android:layout_below="@+id/TIL_Categoria"
@@ -91,10 +93,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <!--Precio del artículo-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TIL_Locacion"
+                android:layout_below="@+id/TIL_Condicion"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/Locacion"
+                    android:hint="Ubicación"
+                    android:inputType="textPostalAddress|textCapSentences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Precio"
-                android:layout_below="@+id/TIL_Condicion"
+                android:layout_below="@+id/TIL_Locacion"
                 android:layout_marginTop="10dp"
                 app:boxCornerRadiusTopStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
@@ -109,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <!--Título del anuncio-->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Titulo"
                 android:layout_below="@+id/TIL_Precio"
@@ -127,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <!--Descripción del artículo-->
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TIL_Descripcion"
                 android:layout_below="@+id/TIL_Titulo"
@@ -147,6 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
+
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
@@ -158,4 +179,5 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 </RelativeLayout>
